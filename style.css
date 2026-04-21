@@ -1,0 +1,73 @@
+body {
+  margin: 0;
+  font-family: "Segoe UI", sans-serif;
+  background: radial-gradient(circle at top, #1b1f2a, #0a0c11);
+  color: white;
+}
+
+/* центр сверху */
+.container {
+  display: flex;
+  gap: 25px;
+  padding-top: 30px;
+  justify-content: center;
+}
+
+/* карточки */
+.card {
+  background: linear-gradient(145deg, #1e2230, #12141c);
+  border-radius: 20px;
+  padding: 18px;
+  width: 320px;
+  box-shadow:
+    0 10px 30px rgba(0,0,0,0.6),
+    inset 0 1px 0 rgba(255,255,255,0.05);
+  backdrop-filter: blur(10px);
+}
+
+h2 {
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+/* сетка */
+.grid {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  gap: 8px;
+}
+
+/* кнопки */
+.btn {
+  height: 38px;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  font-weight: bold;
+  cursor: pointer;
+  user-select: none;
+
+  background: linear-gradient(145deg, #2a2f3a, #1c2029);
+  box-shadow:
+    0 4px 10px rgba(0,0,0,0.5),
+    inset 0 1px 0 rgba(255,255,255,0.05);
+
+  transition: all 0.2s ease;
+}
+
+.btn:hover {
+  transform: translateY(-2px) scale(1.05);
+}
+
+/* состояния с эффектом */
+.red {
+  background: linear-gradient(145deg, #ff5f5f, #b83232);
+  box-shadow: 0 0 10px rgba(255,80,80,0.6);
+  color: white;
+}
+
+.yellow {
+  background: linear-gradient(145deg, #ffd95e, #c9a227);
+  bo
